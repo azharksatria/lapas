@@ -1,0 +1,9 @@
+file 
+*ckeditor.js
+*styles.js
+
+folder
+*samples
+*plugins
+*skins
+*lang

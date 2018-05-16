@@ -1,0 +1,103 @@
+<?php
+error_reporting(0);
+if($_SESSION['slider']==TRUE){
+	$slider='active';
+	unset($_SESSION['slider']);
+	}
+	else{
+		$slider='';
+	}
+if($_SESSION['berita']==TRUE){
+	$berita='active';
+	echo '<script>swal("Sukses","Data Berhasil di '.$_SESSION['berita'].'!","success")</script>';
+	unset($_SESSION['berita']);
+	}
+	else{
+		$berita='';
+	}
+if($_SESSION['sosmed']==TRUE){
+	$sosmed='active';
+	echo '<script>swal("Sukses","Data Berhasil di '.$_SESSION['sosmed'].'!","success")</script>';
+	unset($_SESSION['sosmed']);
+	}
+	else{
+		$sosmed='';
+	}
+if($_SESSION['video']==TRUE){
+	$video='active';
+	echo '<script>swal("Sukses","Data Berhasil di '.$_SESSION['video'].'!","success")</script>';
+	unset($_SESSION['video']);
+	}
+	else{
+		$video='';
+	}
+if($_SESSION['update_pimpinan']==TRUE){
+	$pimpinan='active';
+	echo '<script>swal("Sukses","Data Berhasil di '.$_SESSION['update_pimpinan'].'!","success")</script>';
+	unset($_SESSION['update_pimpinan']);
+	}
+	else{
+		$pimpinan='';
+	}
+if($_SESSION['pengaduan']==TRUE){
+	$pengaduan='active';
+	echo '<script>swal("Sukses","Data Berhasil di '.$_SESSION['pengaduan'].'!","success")</script>';
+	unset($_SESSION['pengaduan']);
+	}
+	else{
+		$pengaduan='';
+	}
+if($_SESSION['edit_admin']==TRUE){
+	$edit_admin='active';
+	}
+	else{
+		$edit_admin='';
+	}
+if($_SESSION['edit_sosmed']==TRUE){
+	$edit_sosmed='active';
+	unset($_SESSION['edit_sosmed']);
+	}
+	else{
+		$edit_sosmed='';
+	}
+if($_SESSION['edit_produk']==TRUE){
+	$edit_produk='active';
+	}
+	else{
+		$edit_produk='';
+	}
+if($_SESSION['update_kontak']==TRUE){
+	$update_kontak='active';
+	}
+	else{
+		$update_kontak='';
+	}
+if($_SESSION['admin']==TRUE)
+	{
+	$admin='active';
+	unset($_SESSION['admin']);
+	}
+	else{
+		$admin='';
+	}
+if($_SESSION['input_produk']==TRUE){
+		$produk='active';
+		echo '<script>swal("Sukses","Data Berhasil di '.$_SESSION['input_produk'].'!","success")</script>';
+		unset($_SESSION['input_produk']);
+	}
+	else{
+		$produk='';
+	}
+
+if($_SESSION['edit_berita']==TRUE){
+		$edit_berita='active';
+		unset($_SESSION['edit_berita']);
+	}
+	else{
+		$edit_berita='';
+	}
+
+if($_SESSION['lihat_pengaduan']==TRUE){
+		$lihat_pengaduan='active';
+	}
+
